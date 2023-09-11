@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
 Button.propTypes = {
-	grade: PropTypes.oneOf(['g35', 'g68', 'g912']),
   label: PropTypes.string,
 	primary: PropTypes.bool,
-	disabled: PropTypes.bool
+	disabled: PropTypes.bool,
+	grade: PropTypes.oneOf(['g35', 'g68', 'g912']),
 }
 
 export function Button({ grade, label, primary, disabled }) {
