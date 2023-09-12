@@ -15,95 +15,95 @@ $secondary-lg-start: $primary-lg-start + $primary-lg;
 $secondary-xl-start: $primary-xl-start + $primary-xl;
 
 * {
-  grid-column: calc($primary-xs-start / span + $primary-xs);
+  grid-column: $primary-xs-start / span + $primary-xs;
 
   @include respond-sm {
-    grid-column: calc($primary-sm-start / span + $primary-sm);
+    grid-column: $primary-sm-start / span + $primary-sm;
   }
   @include respond-md {
-    grid-column: calc($primary-md-start / span + $primary-md);
+    grid-column: $primary-md-start / span + $primary-md;
   }
   @include respond-lg {
-    grid-column: calc($primary-lg-start / span + $primary-lg);
+    grid-column: $primary-lg-start / span + $primary-lg;
   }
   @include respond-xl {
-    grid-column: calc($primary-xl-start / span + $primary-xl);
+    grid-column: $primary-xl-start / span + $primary-xl;
   }
 }
 
 .source--secondary {
-  grid-column: calc($secondary-sm-start / span + $secondary-sm);
-  grid-column: calc($secondary-xs-start / span + $secondary-xs);
+  grid-column: $secondary-sm-start / span + $secondary-sm;
+  grid-column: $secondary-xs-start / span + $secondary-xs;
 
   @include respond-sm {
   }
   
   &-left {
     @include respond-md {
-      grid-column: calc($primary-md-start / span + $secondary-md);
+      grid-column: $primary-md-start / span + $secondary-md;
     }
     @include respond-lg {
-      grid-column: calc($primary-lg-start / span + $secondary-lg);
+      grid-column: $primary-lg-start / span + $secondary-lg;
     }
     @include respond-xl {
-      grid-column: calc($primary-xl-start / span + $secondary-xl);
+      grid-column: $primary-xl-start / span + $secondary-xl;
     }
 
     & + * {
       @include respond-lg {
-        grid-column: calc(($primary-lg-start + $secondary-lg) / span + $primary-lg);
+        grid-column: $primary-lg-start + $secondary-lg / span + $primary-lg;
       }
       @include respond-xl {
-        grid-column: calc(($primary-xl-start + $secondary-xl) / span + $primary-xl);
+        grid-column: $primary-xl-start + $secondary-xl / span + $primary-xl;
       }
     }
   }
 
   &-right {
     @include respond-md {
-      grid-column: calc($secondary-md-start / span + $secondary-md);
+      grid-column: $secondary-md-start / span + $secondary-md;
     }
     @include respond-lg {
-      grid-column: calc($secondary-lg-start / span + $secondary-lg);
+      grid-column: $secondary-lg-start / span + $secondary-lg;
     }
     @include respond-xl {
-      grid-column: calc($secondary-xl-start / span + $secondary-xl);
+      grid-column: $secondary-xl-start / span + $secondary-xl;
     }
   }
 }
 
 .source--full-content {
-  grid-column: calc($primary-xs-start / span + $primary-xs);
+  grid-column: $primary-xs-start / span + $primary-xs;
 
   @include respond-sm {
-    grid-column: calc($primary-sm-start / span + $primary-sm);
+    grid-column: $primary-sm-start / span + $primary-sm;
   }
   @include respond-md {
-    grid-column: calc($primary-md-start / span + $primary-md);
+    grid-column: primary-md-start / span + $primary-md;
   }
   @include respond-lg {
-    grid-column: calc($primary-lg-start / span + $primary-lg + $secondary-lg);
+    grid-column: $primary-lg-start / span + $primary-lg + $secondary-lg;
   }
   @include respond-xl {
-    grid-column: calc($primary-xl-start / span + $primary-xl + $secondary-xl);
+    grid-column: $primary-xl-start / span + $primary-xl + $secondary-xl;
   }
 }
 
 .source__wraparound {
-  grid-column: calc($primary-xs-start / span + $primary-xs);
+  grid-column: $primary-xs-start / span + $primary-xs;
 
   @include respond-sm {
-    grid-column: calc($primary-sm-start / span + $primary-sm);
+    grid-column: $primary-sm-start / span + $primary-sm;
   }
   @include respond-md {
-    grid-column: calc($primary-md-start / span + $primary-md);
+    grid-column: $primary-md-start / span + $primary-md;
   }
   @include respond-lg {
-    grid-column: calc($primary-lg-start / span + $primary-lg + $secondary-lg);
+    grid-column: $primary-lg-start / span + $primary-lg + $secondary-lg;
   }
 
   @include respond-xl {
-    grid-column: calc($primary-xl-start / span + $primary-xl + $secondary-xl);
+    grid-column: $primary-xl-start / span + $primary-xl + $secondary-xl;
   }
   & > p {
     @include respond-lg {
