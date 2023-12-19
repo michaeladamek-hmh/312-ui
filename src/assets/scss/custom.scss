@@ -173,7 +173,7 @@ button, input {
 .g68 {
     --border-radius: .375rem;
     --border-width: .125rem;
-    --color-action-default: #{color-code($blue-c50)};
+    --color-action-default: #{color-code($blue-s50)};
     --spacer-lg: #{nth($para-lheight, 6)};
     --spacer-md: #{nth($para-lheight-half, 6)};
     --spacer-sm: #{nth($para-lheight-quart, 6)};
@@ -245,7 +245,7 @@ button, input {
 .g912 {
     --border-radius: .375rem;
     --border-width: .125rem;
-    --color-action-default: #{color-code($blue-c50)};
+    --color-action-default: #{color-code($blue-s50)};
     --spacer-lg: #{nth($para-lheight, 5)};
     --spacer-md: #{nth($para-lheight-half, 5)};
     --spacer-sm: #{nth($para-lheight-quart, 5)};
