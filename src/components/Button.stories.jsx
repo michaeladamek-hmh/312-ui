@@ -5,7 +5,11 @@ export default {
   title: 'Button',
   tags: ['autodocs'],
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/sYNh2CVOzu9zZZTrXBSneQ/3-12-UI-Starter-Kit?type=design&node-id=211%3A415&mode=design&t=z4LY8YuPxNCuOJbM-1'
+    }
   }
 }
 
@@ -16,6 +20,7 @@ Primary.args = {
   grade: 'g35',
   label: "Check",
   primary: true,
+  focused: false,
   disabled: false
 }
 
