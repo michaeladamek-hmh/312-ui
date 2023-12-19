@@ -15,7 +15,9 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-a11y"
+    "@storybook/addon-a11y",
+    "@storybook/addon-designs",
+    "storybook-addon-pseudo-states"
   ],
   core: {
     builder: '@storybook/builder-vite',
