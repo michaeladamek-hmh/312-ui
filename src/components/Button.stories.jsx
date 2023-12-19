@@ -20,7 +20,6 @@ Primary.args = {
   grade: 'g35',
   label: "Check",
   primary: true,
-  focused: false,
   disabled: false
 }
 
