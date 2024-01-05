@@ -18,6 +18,6 @@ jobs:
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
+        # with:
           branch: gh-pages
           folder: storybook-static # output folder from `npm run build-storybook`
