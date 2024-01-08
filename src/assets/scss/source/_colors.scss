@@ -528,5 +528,6 @@ $tool-mid: color-code($gray-c50);
 $tool-xdark: color-code($gray-c70);
 
 // Feedback colours
-$feedback-green: #008000;
-$feedback-red: #e60000;
+$feedback-green: color-code($green-s40); // #008000;
+$feedback-green: rgba(0, 173, 0, 1); // #00AD00
+$feedback-red: rgba(243, 0, 0, 1); // #e60000;
