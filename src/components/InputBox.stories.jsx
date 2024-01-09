@@ -5,7 +5,11 @@ export default {
   title: 'Input Box',
   tags: ['autodocs'],
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/sYNh2CVOzu9zZZTrXBSneQ/3-12-UI-Starter-Kit?type=design&node-id=374%3A4384&mode=design&t=kQMSIlVeqiaeDUoy-1'
+    }
   }
 }
 

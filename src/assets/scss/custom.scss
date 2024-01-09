@@ -605,12 +605,14 @@ input[type=radio], input[type=checkbox] {
 
       &:before {
         content: '';
-        width: var(--spacer-lg);
-        height: var(--spacer-lg);
+        width: calc(var(--spacer-lg) - var(--border-width) * 2);
+        height: calc(var(--spacer-lg) - var(--border-width) * 2);
         background: white;
+        margin-left: var(--spacer-sm);
         margin-right: var(--spacer-md);
         border-radius: calc(var(--border-radius) - var(--spacer-sm));
-        border: var(--border-width) solid var(--color-action-default);
+        // border: var(--border-width) solid var(--color-action-default);
+        box-shadow: 0 0 0 var(--border-width) white, 0 0 0 calc(var(--border-width) * 2) var(--color-action-default);
       }
   }
 
@@ -631,6 +633,13 @@ input[type=radio], input[type=checkbox] {
       box-shadow: var(--shadow-focus), var(--shadow-inner);
     }
   }
+  &:checked {
+    + label {
+      &:before {
+        background-color: var(--color-action-default);
+      }
+    }
+  }
   &:checked:not(:disabled) {
     + label {
       // --shadow-inner: var(--shadow-selected);
@@ -640,17 +649,20 @@ input[type=radio], input[type=checkbox] {
   &:disabled {
     + label {
       --shadow-outer: var(--shadow-flat);
+      border-color: var(--color-action-disabled);
     }
   }
 
   &.correct {
     + label {
       background-color: var(--color-correct-bg);
+      border-color: var(--color-correct);
     }
   }
   &.incorrect {
     + label {
       background-color: var(--color-incorrect-bg);
+      border-color: var(--color-incorrect);
     }
   }
 }
