@@ -8,7 +8,7 @@ export default {
     layout: 'centered',
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/sYNh2CVOzu9zZZTrXBSneQ/3-12-UI-Starter-Kit?type=design&node-id=211%3A415&mode=design&t=z4LY8YuPxNCuOJbM-1'
+      url: 'https://www.figma.com/file/9iretC8KPFzFM1RfV4Cezm/3-12-UI-system?type=design&node-id=583%3A5057&mode=dev'
     }
   }
 }
