@@ -61,19 +61,46 @@ button, input {
     // --shadow-hover: 0;
     // --shadow-active: 0;
     // --shadow-pad: 0 0 0 0.125rem white;
-    --shadow-outline: 0 0 0 0.0625rem rgba(0,0,0,0.1);
-    --shadow-outline: 0px 0px 0px 0.125rem #FFF, 0px 0px 0px 0.188rem rgba(0, 0, 0, 0.1);
-    --shadow-flat: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
-    --shadow-default: 0 .0625rem .5rem 0 rgba(0, 0, 0, 0.12), 0 .1875rem .25rem 0 rgba(0, 0, 0, 0.14), 0 .1875rem .1875rem -.125rem rgba(0, 0, 0, 0.2);
-    --shadow-hover: 0 .1875rem .875rem .125rem rgba(0, 0, 0, 0.12), 0 .5rem .625rem .0625rem rgba(0, 0, 0, 0.14), 0 .3125rem .3125rem -.1875rem rgba(0, 0, 0, 0.2);
-    --shadow-hover-button: 0 .1875rem .1875rem -.125rem rgba(0,0,0,0.2), 0 .1875rem .25rem 0 rgba(0,0,0,0.14), 0 .0625rem .5rem 0 rgba(0,0,0,0.12);
-    --shadow-selected: 0 0 0 .125rem rgba(0, 105, 254, 1) inset;
-    --shadow-selected-trans: 0 0 0 .125rem rgba(0, 105, 254, 0) inset;
-    --shadow-focus: 0 .125rem 0 .0625rem rgba(255, 46, 171, 1), 0 0 0 .0625rem rgba(255, 46, 171, 1), 0 .0625rem 0 .1875rem rgba(255, 255, 255, 1), 0 0 0 .125rem rgba(255, 255, 255, 1);
-
-    --shadow-inner-gray: .1875rem .25rem .1875rem .0625rem rgba(0, 0, 0, 0.15) inset, 0 .1875rem .125rem 0 rgba(0, 0, 0, 0.3) inset;
-    --shadow-inner-blue: .1875rem .25rem .1875rem .0625rem rgba(0, 105, 254, 0.15) inset, 0 .1875rem .125rem 0 rgba(0, 105, 254, 0.3) inset;
-    --shadow-input-hover: 0 .125rem .375rem .125rem rgba(0, 0, 0, 0.15), 0 .0625rem .125rem 0 rgba(0, 0, 0, 0.3);
+    --shadow-outline: 
+      0 0 0 0.0625rem rgba(0,0,0,0.1);
+    --shadow-flat: 
+      0 0 0 0 rgba(0,0,0,0), 
+      0 0 0 0 rgba(0,0,0,0), 
+      0 0 0 0 rgba(0,0,0,0);
+    --shadow-default: 
+      0 .0625rem .5rem 0 rgba(0, 0, 0, 0.12), 
+      0 .1875rem .25rem 0 rgba(0, 0, 0, 0.14), 
+      0 .1875rem .1875rem -.125rem rgba(0, 0, 0, 0.2);
+    --shadow-hover: 
+      0 .1875rem .875rem .125rem rgba(0, 0, 0, 0.12), 
+      0 .5rem .625rem .0625rem rgba(0, 0, 0, 0.14), 
+      0 .3125rem .3125rem -.1875rem rgba(0, 0, 0, 0.2);
+    --shadow-hover-button: 
+      0 .1875rem .1875rem -.125rem rgba(0,0,0,0.2), 
+      0 .1875rem .25rem 0 rgba(0,0,0,0.14), 
+      0 .0625rem .5rem 0 rgba(0,0,0,0.12);
+    --shadow-selected: 
+      0 0 0 .125rem var(--color-selected) inset;
+    --shadow-correct: 
+      0 0 0 .125rem var(--color-correct) inset;
+    --shadow-incorrect:
+      0 0 0 .125rem var(--color-incorrect) inset;
+    --shadow-selected-trans: 
+      0 0 0 .125rem rgba(0, 105, 254, 0) inset;
+    --shadow-focus: 
+      0 .125rem 0 .0625rem rgba(255, 46, 171, 1), 
+      0 0 0 .0625rem rgba(255, 46, 171, 1), 
+      0 .0625rem 0 .1875rem rgba(255, 255, 255, 1), 
+      0 0 0 .125rem rgba(255, 255, 255, 1);
+    --shadow-inner-gray: 
+      .1875rem .25rem .1875rem .0625rem rgba(0, 0, 0, 0.15) inset,
+       0 .1875rem .125rem 0 rgba(0, 0, 0, 0.3) inset;
+    --shadow-inner-blue: 
+      .1875rem .25rem .1875rem .0625rem rgba(0, 105, 254, 0.15) inset, 
+      0 .1875rem .125rem 0 rgba(0, 105, 254, 0.3) inset;
+    --shadow-input-hover: 
+      0 .125rem .375rem .125rem rgba(0, 0, 0, 0.15), 
+      0 .0625rem .125rem 0 rgba(0, 0, 0, 0.3);
     
        
     // --shadow-condensed: 0 .1875rem .125rem -.125rem rgba(0,0,0,0.3);
@@ -88,14 +115,18 @@ button, input {
     --color-action-disabled: #{color-code($gray-c10)};
     --color-text-disabled: #{color-code($gray-c55)};
     --color-action-bg: #{color-code($blue-c5)};
+    --color-selected: rgba(0, 105, 254, 1);
+    // --color-correct-bg: #{$feedback-green-bg};
+    // --color-incorrect-bg: #{$feedback-red-bg};
     --color-correct: #{$feedback-green};
-    --color-correct-bg: rgba(210, 247, 174, 1); // #{color-code($green-c5)};
     --color-incorrect: #{$feedback-red};
-    --color-incorrect-bg: #{color-code($red-c5)};
     --color-text: #{$text-color};
     --credits: #{nth($type-size, 2)};
     --ui-button: #{nth($icon-wrap, 1)};
     --ui-icon: #{nth($icon-boxed, 1)};
+
+    --icon-correct: url(images/correct912.svg);
+    --icon-incorrect: url(images/incorrect912.svg);
 }
 
 .g35 {
@@ -122,12 +153,22 @@ button, input {
     --body-md-lheight: #{nth($para-lheight, 7)};
     --body-sm-lheight: #{nth($para-lheight, 6)};  
     --caption-lheight: #{nth($para-lheight, 5)};
-    --icon-big: 2rem;
-    --icon-correct: url(./images/icons/correct-35.svg);
-    --icon-incorrect: url(./images/icons/incorrect-35.svg);
 
+    --color-correct-bg: #{$feedback-green-bg};
+    --color-correct: #{$feedback-green};
     --color-incorrect-bg: rgba(215, 231, 241, 1);
-    --color-incorrect: rgba(158, 195, 228, 1);
+    --color-incorrect-bg-35: rgba(215, 231, 241, 1);
+    --color-incorrect: rgba(115, 130, 143, 1);
+
+    --shadow-correct: 
+      0 0 0 .125rem var(--color-correct) inset;
+    --shadow-incorrect:
+      0 0 0 .125rem var(--color-incorrect) inset;
+
+    --icon-correct: url(images/icons/correct-35.svg);
+    --icon-incorrect: url(images/icons/incorrect-35.svg);
+    --icon-height: 2rem;
+    --icon-width: 2rem;
 
     @include respond-md {
         --spacer-lg: #{nth($para-lheight-md, 7)};
@@ -200,12 +241,9 @@ button, input {
     --body-md-lheight: #{nth($para-lheight, 6)};
     --body-sm-lheight: #{nth($para-lheight, 5)};  
     --caption-lheight: #{nth($para-lheight, 4)};
-    --icon-big: 2rem;
-    --icon-correct: url(./images/icons/correct-68.svg);
-    --icon-incorrect: url(./images/icons/incorrect-68.svg);
 
-    --color-correct-bg: rgba(255, 255, 255, 1);
-    --color-incorrect-bg: rgba(255, 255, 255, 1);
+    --icon-height: 1.75rem;
+    --icon-width: 1.75rem;
 
     @include respond-md {
         --spacer-lg: #{nth($para-lheight-md, 6)};
@@ -278,16 +316,9 @@ button, input {
     --body-md-lheight: #{nth($para-lheight, 5)};
     --body-sm-lheight: #{nth($para-lheight, 4)};  
     --caption-lheight: #{nth($para-lheight, 3)};
-    --icon-big: 2rem;
-    --icon-correct: url(./images/icons/correct-912.svg);
-    --icon-incorrect: url(./images/icons/incorrect-912.svg);
 
-
-    --color-correct: rgba(255, 255, 255, 1);
-    --color-correct-bg: rgba(255, 255, 255, 1);
-    --color-incorrect: rgba(255, 255, 255, 1);
-    --color-incorrect-bg: rgba(255, 255, 255, 1);
-
+    --icon-height: 1.5rem;
+    --icon-width: 1.5rem;
     @include respond-md {
         --spacer-lg: #{nth($para-lheight-md, 5)};
         --spacer-md: #{nth($para-lheight-md-half, 5)};
@@ -550,10 +581,12 @@ button {
 }
 
 input[type=text] {
+    --color-correct-bg: #{$feedback-green-bg};
+    --color-incorrect-bg: #{$feedback-red-bg};
     --shadow-inner: var(--shadow-inner-gray);
     --shadow-outer: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
     border-radius: var(--border-radius);
-    border: .125rem solid white;
+    border: .125rem solid whrgba(41, 30, 30, 0);
     @include body-md;
     padding: calc(var(--spacer-sm) - var(--border-width)) calc(var(--spacer-md) - var(--border-width));
     background-color: var(--color-action-disabled);
@@ -579,7 +612,7 @@ input[type=text] {
         color: black;
     }
     &.incorrect {
-        background-color: var(--color-incorrect-bg);
+        background-color: var(--color-incorrect-bg-35, #{$feedback-red-bg});
         color: black;
     }
 
@@ -642,27 +675,26 @@ input[type=radio], input[type=checkbox] {
   }
   &:checked:not(:disabled) {
     + label {
-      // --shadow-inner: var(--shadow-selected);
+      --shadow-inner: var(--shadow-selected);
     }
   }   
   
   &:disabled {
     + label {
       --shadow-outer: var(--shadow-flat);
-      border-color: var(--color-action-disabled);
     }
   }
 
   &.correct {
     + label {
-      background-color: var(--color-correct-bg);
-      border-color: var(--color-correct);
+      --shadow-inner: var(--shadow-correct);
+      background-color: var(--color-correct-bg, white);
     }
   }
   &.incorrect {
     + label {
-      background-color: var(--color-incorrect-bg);
-      border-color: var(--color-incorrect);
+      --shadow-inner: var(--shadow-incorrect);
+      background-color: var(--color-incorrect-bg, white);
     }
   }
 }
@@ -700,7 +732,7 @@ input[type=radio] {
 
     &:checked {
       + label {
-        border-color: var(--color-action-default);
+        // border-color: var(--color-action-default);
       }
     }  
 
@@ -715,36 +747,37 @@ input[type=radio] {
     &:disabled {
       + label {
         // box-shadow: unset;
-        border-color: var(--color-action-disabled);
+        // border-color: var(--color-action-disabled);
       }
     }
 
     &.correct {
       + label {
-        border-color: var(--color-correct);
+        // border-color: var(--color-correct);
+        padding-right: var(--spacer-md);
         &::after {
-          content: "";
-          background: var(--icon-correct) no-repeat center right;
+          background: var(--icon-correct) no-repeat center left;
           background-size: contain;
-          height: var(--icon-big);
-          padding-left: calc((var(--spacer-md) / 2) + var(--icon-big));
-          width: var(--icon-big);
-          transform: translateX(cacl(var(--icon-big) / 1));
+          content: "";
+          display: inline-block;
+          height: var(--icon-width);
+          width: var(--icon-height);
+          transform: translateX(calc(var(--icon-width) / 4));
         }
       }
     }
     &.incorrect {
       + label {
-        border-color: var(--color-incorrect);
-        // box-shadow: var(--shadow-hover);
+        // border-color: var(--color-incorrect);
+        padding-right: var(--spacer-md);
         &::after {
-          content: "";
-          background: var(--icon-incorrect) no-repeat center right;
+          background: var(--icon-incorrect) no-repeat center left;
           background-size: contain;
-          height: var(--icon-big);
-          padding-left: calc(var(--spacer-md) + var(--icon-big));
-          width: var(--icon-big);
-          transform: translateX(cacl(var(--icon-big) / 1));
+          content: "";
+          display: inline-block;
+          height: var(--icon-width);
+          width: var(--icon-height);
+          transform: translateX(calc(var(--icon-width) / 4));
         }
       }
     }
