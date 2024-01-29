@@ -125,8 +125,8 @@ button, input {
     --ui-button: #{nth($icon-wrap, 1)};
     --ui-icon: #{nth($icon-boxed, 1)};
 
-    --icon-correct: url(images/correct912.svg);
-    --icon-incorrect: url(images/incorrect912.svg);
+    --icon-correct: url(images/icons/correct-912.svg);
+    --icon-incorrect: url(images/icons/incorrect-912.svg);
 }
 
 .g35 {
@@ -640,7 +640,7 @@ input[type=radio], input[type=checkbox] {
         content: '';
         width: calc(var(--spacer-lg) - var(--border-width) * 2);
         height: calc(var(--spacer-lg) - var(--border-width) * 2);
-        background: white;
+        background-color: white;
         margin-left: var(--spacer-sm);
         margin-right: var(--spacer-md);
         border-radius: calc(var(--border-radius) - var(--spacer-sm));
