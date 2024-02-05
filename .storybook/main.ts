@@ -1,8 +1,6 @@
-/** @type { import('@storybook/react-vite').StorybookConfig } */
+import type { StorybookConfig } from '@storybook/react-vite';
 
-import { mergeConfig } from 'vite';
-
-const config = {
+const config: StorybookConfig = {
   framework: {
     name: "@storybook/react-vite",
     options: {},
@@ -11,6 +9,9 @@ const config = {
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)", 
     "../src/components/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
+  features: {
+    legacyMdx1: true, 
+  },
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -19,9 +20,6 @@ const config = {
     "@storybook/addon-designs",
     "storybook-addon-pseudo-states"
   ],
-  core: {
-    builder: '@storybook/builder-vite',
-  },
   docs: {
     autodocs: "tag",
   },

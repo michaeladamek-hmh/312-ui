@@ -7,6 +7,13 @@ Button.propTypes = {
 	grade: PropTypes.oneOf(['g35', 'g68', 'g912']),
 }
 
+// type ButtonProps {
+// 	label: string,
+// 	primary: boolean,
+// 	disabled: boolean,
+// 	grade: string
+// }
+
 export function Button({ grade, label, primary, disabled }) {
 	const isPrimary = primary ? 'primary' : 'secondary';
 
