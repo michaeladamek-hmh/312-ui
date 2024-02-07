@@ -1,27 +1,23 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-Button.propTypes = {
-  label: PropTypes.string,
-	primary: PropTypes.bool,
-	disabled: PropTypes.bool,
-	grade: PropTypes.oneOf(['g35', 'g68', 'g912']),
-}
-
-// type ButtonProps {
-// 	label: string,
-// 	primary: boolean,
-// 	disabled: boolean,
-// 	grade: string
+// Button.propTypes = {
+//   label: PropTypes.string,
+// 	primary: PropTypes.bool,
+// 	disabled: PropTypes.bool,
 // }
 
-export function Button({ grade, label, primary, disabled }) {
+export type ButtonProps = {
+	label: string;
+	primary: boolean;
+	disabled: boolean;
+}
+
+export function Button({label, primary, disabled}: ButtonProps){
 	const isPrimary = primary ? 'primary' : 'secondary';
 
 	return (
-		<div className={grade}>
-			<button type="button" className={` ${isPrimary} `} disabled={disabled} >
-				{ label }
-			</button>
-		</div>
+		<button type="button" className={` ${isPrimary} `} disabled={disabled} >
+			{ label }
+		</button>
 	);
 }

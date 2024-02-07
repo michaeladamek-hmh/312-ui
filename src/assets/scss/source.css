@@ -166,24 +166,14 @@ table {
 *:focus-visible:not(.source__flipcards summary),
 .source__flipcards details:not([open]) summary:focus-visible .source__flipcards__front,
 .source__flipcards details[open] summary:focus-visible {
-  --focus-indicator:
-   0px 0px 0px 4px #fff,
-   0px 0px 0px 6px rgba(255, 46, 171, 1),
-   0 0 0 4px #fff;
-  --focus-indicator:
-   0px 0px 0px 2px #FFF,
-   0px 0px 0px 3px.188rem rgba(0, 0, 0, 0.1),
-   0 .125rem 0 5px rgba(255, 46, 171, 1),
-   0 0 0 5px rgba(255, 46, 171, 1),
-   0 .0625rem 0 .6px rgba(255, 255, 255, 1),
-   0 0 0 7px rgba(255, 255, 255, 1);
-  box-shadow: var(--shadow-outline) var(--focus-indicator);
-  box-shadow: var(--shadow-outline);
+  --focus-indicator: 0px 0px 0px 1px #fff, 0px 0px 0px 3px rgba(255, 46, 171, 1), 0 0 0 4px #fff;
+  --focus-indicator: 0 .125rem 0 .0625rem rgba(255, 46, 171, 1), 0 0 0 .0625rem rgba(255, 46, 171, 1), 0 .0625rem 0 .1875rem rgba(255, 255, 255, 1), 0 0 0 .125rem rgba(255, 255, 255, 1);
   box-shadow: var(--focus-indicator);
 }
 
-div[class^=g],
-div[class^=g] > form {
+.g35:focus-visible,
+.g68:focus-visible,
+.g912:focus-visible {
   box-shadow: none !important;
 }
 

@@ -98,8 +98,8 @@ button:first-of-type, button:nth-of-type(4n + 1), input:first-of-type, input:nth
   --credits: 0.875rem;
   --ui-button: 2rem;
   --ui-icon: 1.25rem;
-  --icon-correct: url(images/correct912.svg);
-  --icon-incorrect: url(images/incorrect912.svg);
+  --icon-correct: url(images/icons/correct-912.svg);
+  --icon-incorrect: url(images/icons/incorrect-912.svg);
 }
 
 .g35 {
@@ -545,7 +545,7 @@ input[type=radio] + label:before, input[type=checkbox] + label:before {
   content: "";
   width: calc(var(--spacer-lg) - var(--border-width) * 2);
   height: calc(var(--spacer-lg) - var(--border-width) * 2);
-  background: white;
+  background-color: white;
   margin-left: var(--spacer-sm);
   margin-right: var(--spacer-md);
   border-radius: calc(var(--border-radius) - var(--spacer-sm));

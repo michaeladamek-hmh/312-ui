@@ -17,7 +17,6 @@ export const Primary = args => <Button {...args} />;
 export const Secondary = args => <Button {...args} />;
 
 Primary.args = {
-  grade: 'g35',
   label: "Check",
   primary: true,
   disabled: false
