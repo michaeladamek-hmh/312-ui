@@ -11,15 +11,15 @@ export type InputBoxProps = {
 }
 
 export function InputBox({ type, id, value, name, checked, disabled, correct, incorrect, children }: InputBoxProps) {
-	const isCorrect = correct ? 'correct' : '';
-	const isIncorrect = incorrect ? 'incorrect' : '';
+	const isCorrect = correct ? 'connect__input-correct' : '';
+	const isIncorrect = incorrect ? 'connect__input-incorrect' : '';
 
   return (
     <>
       <input 
         type={ type }
         id={ id }
-        className={` ${isCorrect} ${isIncorrect}`}
+        className={`connect__input ${isCorrect} ${isIncorrect}`}
         value={ value }
         name={ name }
         defaultChecked={ checked }
