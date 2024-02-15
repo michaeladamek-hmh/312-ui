@@ -6,33 +6,33 @@ export default {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
-  }
+  },
 };
 
-export const Default = args => <SelectBox {...args} />;
-export const Correct = args => <SelectBox {...args} />;
-export const Incorrect = args => <SelectBox {...args} />;
-export const Disabled = args => <SelectBox {...args} />;
+export const Default = (args) => <SelectBox {...args} />;
+export const Correct = (args) => <SelectBox {...args} />;
+export const Incorrect = (args) => <SelectBox {...args} />;
+export const Disabled = (args) => <SelectBox {...args} />;
 
 Default.args = {
   correct: false,
   incorrect: false,
   disabled: false,
-  grade: 'g35'
-}
+  grade: 'g35',
+};
 
 Correct.args = {
   ...Default.args,
   correct: true,
-  disabled: true
-}
+  disabled: true,
+};
 
 Incorrect.args = {
   ...Default.args,
-  incorrect: true
-}
+  incorrect: true,
+};
 
 Disabled.args = {
   ...Default.args,
-  disabled: true
-}
+  disabled: true,
+};

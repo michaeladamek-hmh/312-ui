@@ -6,13 +6,13 @@ export default {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
-  }
+  },
 };
 
-export const Default = args => <Reveal {...args} />;
+export const Default = (args) => <Reveal {...args} />;
 
 Default.args = {
   front: 'Select to Reveal',
   back: 'Iron Man',
-	grade: 'g35'
-}
+  grade: 'g35',
+};
