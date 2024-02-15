@@ -28,7 +28,8 @@ Default.args = {
   incorrect: false,
   checked: false,
   disabled: false,
-  children: 'The mouse rides a bike',
+  label: 'The mouse rides a bike',
+	grade: 'g35'
 }
 
 Checked.args = {
