@@ -11,13 +11,11 @@
     "sourceMap": true,
     "noImplicitAny": false,
     "baseUrl": ".",
-     "paths": {
-      "connect-design-system": [ "src/component/index.ts" ]
+    "paths": {
+      "connect-design-system": ["src/component/index.ts"]
     },
-    "typeRoots": [
-      "src/component/index.d.ts"
-    ],
-    
+    "typeRoots": ["src/component/index.d.ts"],
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -31,8 +29,8 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["src","./src/**/*"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["src", "./src/**/*"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

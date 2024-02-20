@@ -6,8 +6,12 @@
 // @import "source/icons/icon-map";
 // @import "source/_icons";
 
-*, *:before, *:after {
-  transition: all .2s ease-in-out;
+@import '../css/source.css';
+
+*,
+*:before,
+*:after {
+  transition: all 0.2s ease-in-out;
 }
 
 /*! Variables and gradeband values */
@@ -20,48 +24,29 @@
   // --shadow-hover: 0;
   // --shadow-active: 0;
   // --shadow-pad: 0 0 0 0.125rem white;
-  --shadow-outline: 
-    0 0 0 0.0625rem rgba(0,0,0,0.1);
-  --shadow-flat: 
-    0 0 0 0 rgba(0,0,0,0), 
-    0 0 0 0 rgba(0,0,0,0), 
-    0 0 0 0 rgba(0,0,0,0);
-  --shadow-default: 
-    0 .0625rem .5rem 0 rgba(0, 0, 0, 0.12), 
-    0 .1875rem .25rem 0 rgba(0, 0, 0, 0.14), 
-    0 .1875rem .1875rem -.125rem rgba(0, 0, 0, 0.2);
-  --shadow-hover: 
-    0 .1875rem .875rem .125rem rgba(0, 0, 0, 0.12), 
-    0 .5rem .625rem .0625rem rgba(0, 0, 0, 0.14), 
-    0 .3125rem .3125rem -.1875rem rgba(0, 0, 0, 0.2);
-  --shadow-hover-button: 
-    0 .1875rem .1875rem -.125rem rgba(0,0,0,0.2), 
-    0 .1875rem .25rem 0 rgba(0,0,0,0.14), 
-    0 .0625rem .5rem 0 rgba(0,0,0,0.12);
-  --shadow-selected: 
-    0 0 0 .125rem var(--color-selected) inset;
-  --shadow-correct: 
-    0 0 0 .125rem var(--color-correct) inset;
-  --shadow-incorrect:
-    0 0 0 .125rem var(--color-incorrect) inset;
-  --shadow-selected-trans: 
-    0 0 0 .125rem rgba(0, 105, 254, 0) inset;
-  --shadow-focus: 
-    0 .125rem 0 .0625rem rgba(255, 46, 171, 1), 
-    0 0 0 .0625rem rgba(255, 46, 171, 1), 
-    0 .0625rem 0 .1875rem rgba(255, 255, 255, 1), 
-    0 0 0 .125rem rgba(255, 255, 255, 1);
-  --shadow-inner-gray: 
-    .1875rem .25rem .1875rem .0625rem rgba(0, 0, 0, 0.15) inset,
-      0 .1875rem .125rem 0 rgba(0, 0, 0, 0.3) inset;
-  --shadow-inner-blue: 
-    .1875rem .25rem .1875rem .0625rem rgba(0, 105, 254, 0.15) inset, 
-    0 .1875rem .125rem 0 rgba(0, 105, 254, 0.3) inset;
-  --shadow-input-hover: 
-    0 .125rem .375rem .125rem rgba(0, 0, 0, 0.15), 
-    0 .0625rem .125rem 0 rgba(0, 0, 0, 0.3);
-  
-      
+  --shadow-outline: 0 0 0 0.0625rem rgba(0, 0, 0, 0.1);
+  --shadow-flat: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  --shadow-default: 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.12),
+    0 0.1875rem 0.25rem 0 rgba(0, 0, 0, 0.14), 0 0.1875rem 0.1875rem -0.125rem rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 0.1875rem 0.875rem 0.125rem rgba(0, 0, 0, 0.12),
+    0 0.5rem 0.625rem 0.0625rem rgba(0, 0, 0, 0.14),
+    0 0.3125rem 0.3125rem -0.1875rem rgba(0, 0, 0, 0.2);
+  --shadow-hover-button: 0 0.1875rem 0.1875rem -0.125rem rgba(0, 0, 0, 0.2),
+    0 0.1875rem 0.25rem 0 rgba(0, 0, 0, 0.14), 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.12);
+  --shadow-selected: 0 0 0 0.125rem var(--color-selected) inset;
+  --shadow-correct: 0 0 0 0.125rem var(--color-correct) inset;
+  --shadow-incorrect: 0 0 0 0.125rem var(--color-incorrect) inset;
+  --shadow-selected-trans: 0 0 0 0.125rem rgba(0, 105, 254, 0) inset;
+  --shadow-focus: 0 0.125rem 0 0.0625rem rgba(255, 46, 171, 1),
+    0 0 0 0.0625rem rgba(255, 46, 171, 1), 0 0.0625rem 0 0.1875rem rgba(255, 255, 255, 1),
+    0 0 0 0.125rem rgba(255, 255, 255, 1);
+  --shadow-inner-gray: 0.1875rem 0.25rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15) inset,
+    0 0.1875rem 0.125rem 0 rgba(0, 0, 0, 0.3) inset;
+  --shadow-inner-blue: 0.1875rem 0.25rem 0.1875rem 0.0625rem rgba(0, 105, 254, 0.15) inset,
+    0 0.1875rem 0.125rem 0 rgba(0, 105, 254, 0.3) inset;
+  --shadow-input-hover: 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.15),
+    0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.3);
+
   // --shadow-condensed: 0 .1875rem .125rem -.125rem rgba(0,0,0,0.3);
   // --shadow-diffused: 0 .1875rem .1875rem -.0625rem rgba(0,0,0,0.15);
   // --shadow-condensed-hover: 0 .1875rem .1875rem -.125rem rgba(0,0,0,0.3);
@@ -94,10 +79,8 @@
 
 .connect__g23,
 .connect__g45 {
-  --shadow-correct: 
-    0 0 0 .125rem var(--color-correct) inset;
-  --shadow-incorrect:
-    0 0 0 .125rem var(--color-incorrect) inset;
+  --shadow-correct: 0 0 0 0.125rem var(--color-correct) inset;
+  --shadow-incorrect: 0 0 0 0.125rem var(--color-incorrect) inset;
 
   --icon-correct: url(images/icons/correct-35.svg);
   --icon-incorrect: url(images/icons/incorrect-35.svg);
@@ -115,7 +98,7 @@ button.connect__button {
   background-color: var(--active-color);
   box-shadow: var(--shadow-outline), var(--shadow-outer), var(--shadow-inner);
   border-radius: var(--border-radius);
-  border: .125rem solid white;
+  border: 0.125rem solid white;
   color: white;
   cursor: pointer;
   font-family: var(--connect__font-sans);
@@ -130,13 +113,13 @@ button.connect__button {
     }
     &:active {
       --shadow-outer: var(--shadow-flat);
-    }  
+    }
   }
-  
+
   &:focus-visible {
     --shadow-outer: var(--shadow-focus);
   }
-  
+
   &-secondary:not(:disabled) {
     --shadow-inner: var(--shadow-selected);
     color: var(--active-color);
@@ -144,53 +127,52 @@ button.connect__button {
   }
 
   &:disabled {
-      --active-color: var(--color-action-disabled);
-      color: var(--color-text-disabled);
-      cursor: unset;
+    --active-color: var(--color-action-disabled);
+    color: var(--color-text-disabled);
+    cursor: unset;
   }
 }
 
-
 // .source__accordion {
 //     list-style: none;
-    
+
 //     > li {
 //       padding-left: 0;
 //       margin-top: var(--border-width);
 //       margin-left: 0;
-  
+
 //       &:before {
 //         content: none;
 //       }
 //     }
-  
+
 //     details {
 //       margin-top: 0;
-  
+
 //       & > * {
 //         padding-left: var(--spacer-md);
 //         padding-right: var(--spacer-md);
 //       }
-  
+
 //       &[open] {
 //         padding-bottom: var(--spacer-sm);
-  
+
 //         summary {
 //           border-radius: var(--border-radius) var(--border-radius) 0 0;
-  
+
 //           &:after {
 //             transform: rotate(180deg);
 //           }
 //         }
 //       }
 //     }
-  
+
 //     summary {
 //       padding-top: var(--spacer-sm);
 //       padding-bottom: var(--spacer-sm);
 //       min-height: calc(var(--ui-button) + var(--spacer-md));
 //       border-radius: var(--border-radius);
-  
+
 //       @include body-lg;
 //       list-style: none;
 //       cursor: pointer;
@@ -198,12 +180,12 @@ button.connect__button {
 //       display: flex;
 //       align-items: center;
 //       justify-content: space-between;
-  
+
 //       *,
 //       & + * {
 //         margin-top: 0;
 //       }
-  
+
 //       &:after {
 //         width: var(--ui-button);
 //         height: var(--ui-button);
@@ -217,7 +199,7 @@ button.connect__button {
 //         background-repeat: no-repeat;
 //         flex-shrink: 0;
 //       }
-  
+
 //       &:before {
 //         width: 100%;
 //         height: 100%;
@@ -230,26 +212,26 @@ button.connect__button {
 //         box-shadow: var(--shadow-default);
 //         z-index: -1;
 //       }
-  
+
 //       &:hover {
 //         &:before {
 //           box-shadow: var(--shadow-hover);
 //         }
 //       }
-  
+
 //       &:active {
 //         &:before {
 //           box-shadow: var(--shadow-active);
 //         }
 //       }
 //     }
-  
+
 //     &--divider {
 //       summary {
 //         & + * {
 //           @include padding-above(0.25);
 //           position: relative;
-  
+
 //           &:before {
 //             position: absolute;
 //             top: 0;
@@ -262,13 +244,13 @@ button.connect__button {
 //         }
 //       }
 //     }
-  
+
 //     &--color {
 //       details {
 //         &[open] {
 //           summary {
 //             background: var(--color-action-bg);
-  
+
 //             & + * {
 //               padding-top: var(--spacer-sm);
 //             }
@@ -278,13 +260,13 @@ button.connect__button {
 //     }
 // }
 
-input[type=text].connect__input {
+input[type='text'].connect__input {
   --color-correct-bg: var(--feedback-green-bg);
   --color-incorrect-bg: var(--feedback-red-bg);
   --shadow-inner: var(--shadow-inner-gray);
-  --shadow-outer: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+  --shadow-outer: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
   border-radius: var(--border-radius);
-  border: .125rem solid whrgba(41, 30, 30, 0);
+  border: 0.125rem solid whrgba(41, 30, 30, 0);
   //@include body-md;
   font-family: var(--connect__font-sans);
   font-size: var(--body-md);
@@ -293,9 +275,9 @@ input[type=text].connect__input {
   box-shadow: var(--shadow-inner), var(--shadow-outer);
 
   &:not(:disabled):not(:focus) {
-      &:hover {
-        --shadow-outer: var(--shadow-hover-button);
-      }
+    &:hover {
+      --shadow-outer: var(--shadow-hover-button);
+    }
   }
 
   &:focus {
@@ -304,27 +286,27 @@ input[type=text].connect__input {
   }
 
   &:disabled {
-      box-shadow: unset;
+    box-shadow: unset;
   }
 
   &-correct {
-      background-color: var(--color-correct-bg);
-      color: black;
+    background-color: var(--color-correct-bg);
+    color: black;
   }
   &-incorrect {
-      background-color: var(--color-incorrect-bg-35, --feedback-red-bg);
-      color: black;
+    background-color: var(--color-incorrect-bg-35, --feedback-red-bg);
+    color: black;
   }
-
 }
 
-input[type=radio].connect__input, input[type=checkbox].connect__input {
+input[type='radio'].connect__input,
+input[type='checkbox'].connect__input {
   position: absolute;
   opacity: 0;
 
   + label {
     --shadow-outer: var(--shadow-default);
-    --shadow-inner: 0 0 0 .125rem rgba(0, 105, 254, 0) inset;
+    --shadow-inner: 0 0 0 0.125rem rgba(0, 105, 254, 0) inset;
     align-items: center;
     box-shadow: var(--shadow-outline), var(--shadow-outer), var(--shadow-inner);
     background-color: white;
@@ -336,7 +318,7 @@ input[type=radio].connect__input, input[type=checkbox].connect__input {
     padding: var(--spacer-sm) var(--spacer-md) var(--spacer-sm) var(--spacer-sm);
     border-radius: var(--border-radius);
     position: relative;
-    border: .125rem solid white;
+    border: 0.125rem solid white;
     // box-shadow: var(--shadow-1), var(--shadow-2), var(--shadow-3), var(--shadow-4), var(--shadow-5), var(--shadow-inset);
 
     &:before {
@@ -348,7 +330,9 @@ input[type=radio].connect__input, input[type=checkbox].connect__input {
       margin-right: var(--spacer-md);
       border-radius: calc(var(--border-radius) - var(--spacer-sm));
       // border: var(--border-width) solid var(--color-action-default);
-      box-shadow: 0 0 0 var(--border-width) white, 0 0 0 calc(var(--border-width) * 2) var(--color-action-default);
+      box-shadow:
+        0 0 0 var(--border-width) white,
+        0 0 0 calc(var(--border-width) * 2) var(--color-action-default);
     }
   }
 
@@ -356,10 +340,10 @@ input[type=radio].connect__input, input[type=checkbox].connect__input {
     + label {
       cursor: pointer;
       &:hover {
-        --shadow-outer: var(--shadow-hover)
-      }  
+        --shadow-outer: var(--shadow-hover);
+      }
       &:active {
-        --shadow-outer: var(--shadow-flat)
+        --shadow-outer: var(--shadow-flat);
       }
     }
   }
@@ -380,8 +364,8 @@ input[type=radio].connect__input, input[type=checkbox].connect__input {
     + label {
       --shadow-inner: var(--shadow-selected);
     }
-  }   
-  
+  }
+
   &:disabled {
     + label {
       --shadow-outer: var(--shadow-flat);
@@ -402,17 +386,19 @@ input[type=radio].connect__input, input[type=checkbox].connect__input {
   }
 }
 
-input[type=radio].connect__input {
+input[type='radio'].connect__input {
   + label {
     border-radius: 9999rem;
-    &:before, &:after {
+    &:before,
+    &:after {
       border-radius: 50%;
     }
   }
 }
 
 .mcq {
-  input[type=radio].connect__input, input[type=checkbox].connect__input {
+  input[type='radio'].connect__input,
+  input[type='checkbox'].connect__input {
     + label {
       padding: var(--spacer-sm) var(--spacer-md);
       border-radius: var(--border-radius);
@@ -420,7 +406,8 @@ input[type=radio].connect__input {
       // border: var(--border-width) solid transparent;
       margin-top: var(--spacer-md);
 
-      &:before, &:after {
+      &:before,
+      &:after {
         content: unset;
       }
 
@@ -431,13 +418,13 @@ input[type=radio].connect__input {
           border-radius: calc(var(--border-radius) - var(--spacer-sm));
         }
       }
-    }    
+    }
 
     &:checked {
       + label {
         // border-color: var(--color-action-default);
       }
-    }  
+    }
 
     &:not(:disabled) {
       + label {
@@ -461,7 +448,7 @@ input[type=radio].connect__input {
         &::after {
           background: var(--icon-correct) no-repeat center left;
           background-size: contain;
-          content: "";
+          content: '';
           display: inline-block;
           height: var(--icon-width);
           width: var(--icon-height);
@@ -476,7 +463,7 @@ input[type=radio].connect__input {
         &::after {
           background: var(--icon-incorrect) no-repeat center left;
           background-size: contain;
-          content: "";
+          content: '';
           display: inline-block;
           height: var(--icon-width);
           width: var(--icon-height);
@@ -489,16 +476,15 @@ input[type=radio].connect__input {
 
 // input[type=radio], input[type=checkbox] {
 //   &:focus {
-//     outline: none; 
+//     outline: none;
 //   }
 //   &:focus-visible {
 //     + label {
 //       --focus-indicator: 0px 0px 0px 1px #fff, 0px 0px 0px 3px #ca0092, 0 0 0 4px #fff;
-//       box-shadow: var(--focus-indicator);   
+//       box-shadow: var(--focus-indicator);
 //     }
 //   }
 // }
-
 
 // .source__flipcards, .source__reveal {
 //   --flipcard-height: calc(var(--spacer-lg) * 10);
@@ -562,7 +548,7 @@ input[type=radio].connect__input {
 //   summary:focus {
 //     outline: 0;
 //   }
-  
+
 //   summary:before {
 //       content: '';
 //   }
@@ -726,7 +712,6 @@ input[type=radio].connect__input {
 //     }
 //   }
 
-
 //   // Sequenced cards
 //   .source__flipcards--sequenced {
 //     li:not(:has(details[open])):not(:has( ~ li details[open])) ~ li details {
@@ -879,29 +864,29 @@ input[type=radio].connect__input {
 //       box-shadow: var(--shadow-default);
 //       // overflow: hidden;
 //       transition: box-shadow 0.1s cubic-bezier(0.52, 0.02, 0.28, 1);
-      
+
 //       &:hover {
 //           box-shadow: var(--shadow-hover);
 //       }
-      
+
 //       &[open] {
 //           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.15);
-          
+
 //           summary {
 //               background-image: unset;
 //           }
-          
+
 //           .source__flipcards__front, .source__flipcards__back {
 //               transition: unset;
 //               animation: unset;
 //           }
-          
+
 //           .source__flipcards__back {
 //               transform: rotateY(0deg);
 //           }
 //       }
 //   }
-  
+
 //   summary {
 //       width: 100%;
 //       height: 100%;
@@ -913,34 +898,34 @@ input[type=radio].connect__input {
 //       background-size: calc(var(--half-lheight) + var(--quart-lheight));
 //       background-position: center center;
 //       background-repeat: no-repeat;
-      
+
 //       &:hover {
 //           .source__flipcards__front, .source__flipcards__back {
 //               box-shadow: unset;
 //           }
 //       }
-      
+
 //       &:before {
 //           content: unset;
 //       }
 //   }
-  
+
 //   .source__flipcards__back-visuals {
 //       display: none;
 //   }
-  
+
 //   .source__flipcards__front, .source__flipcards__back {
 //       background: unset;
 //       box-shadow: unset;
 //       transition: unset;
 //       animation: unset;
 //       padding: var(--quart-lheight) var(--half-lheight);
-      
+
 //       &:before, &:after {
 //           content: unset;
 //       }
 //   }
-  
+
 //   .source__flipcards__front {
 //       right: 0;
 //       bottom: 0;
@@ -949,20 +934,20 @@ input[type=radio].connect__input {
 //       opacity: 0;
 //       pointer-events: none
 //   }
-  
+
 //   .source__flipcards__back {
 //       display: flex;
 //       align-items: center;
 //       justify-content: center;
-      
+
 //       > *:first-child {
 //           margin-top: 0;
 //       }
-      
+
 //       > *:last-child {
 //         padding-bottom: 0;
 //       }
-      
+
 //       > * {
 //           margin: 0;
 //           @include body-md;

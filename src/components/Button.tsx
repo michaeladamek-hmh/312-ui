@@ -1,5 +1,5 @@
 export type ButtonProps = {
-  children: React.ReactElement;
+  children: React.ReactNode;
   primary: boolean;
   disabled: boolean;
 };
