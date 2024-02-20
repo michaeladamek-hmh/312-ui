@@ -13,40 +13,43 @@
 // }
 
 export type InputBoxProps = {
-  type: 'checkbox' | 'radio',
-  id: string,
-  name: string,
-  value: string,
-  checked: boolean,
-  disabled: boolean,
-  correct: boolean,
-  incorrect: boolean,
-  label: string,
-}
+  type: 'checkbox' | 'radio';
+  id: string;
+  name: string;
+  value: string;
+  checked: boolean;
+  disabled: boolean;
+  correct: boolean;
+  incorrect: boolean;
+  children: React.ReactElement;
+};
 
-export function InputBox({ type, id, value, name, checked, disabled, correct, incorrect, label }: InputBoxProps) {
-	const isCorrect = correct ? 'correct' : '';
-	const isIncorrect = incorrect ? 'incorrect' : '';
+export function InputBox({
+  type,
+  id,
+  value,
+  name,
+  checked,
+  disabled,
+  correct,
+  incorrect,
+  children,
+}: InputBoxProps) {
+  const isCorrect = correct ? 'connect__input-correct' : '';
+  const isIncorrect = incorrect ? 'connect__input-incorrect' : '';
 
   return (
     <>
-      <form className="">
-        <input 
-          type={ type }
-          id={ id }
-          className={` ${isCorrect} ${isIncorrect}`}
-          value={ value }
-          name={ name }
-          defaultChecked={ checked }
-          disabled={ disabled }
-        />
-        <label
-          htmlFor={ id }
-        >
-          { label }
-        </label>
-
-      </form>
+      <input
+        type={type}
+        id={id}
+        className={`connect__input ${isCorrect} ${isIncorrect}`}
+        value={value}
+        name={name}
+        defaultChecked={checked}
+        disabled={disabled}
+      />
+      <label htmlFor={id}>{children}</label>
     </>
-  )
+  );
 }

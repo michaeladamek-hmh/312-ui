@@ -1,36 +1,39 @@
-/** @type { import('@storybook/react').Preview } */
+import { Preview } from '@storybook/react';
 
-// const { addDecorator } = require('@storybook/react');
-// const { withPropsTable } = require('storybook-addon-react-docgen');
-
-// addDecorator(withPropsTable);
-
-import '../src/assets/scss/source.scss';
+import '../src/assets/css/source.css';
 import '../src/assets/scss/custom.scss';
 
-export const parameters = {
-  themes: {
-    default: 'Grade 3-5',
-    list: [
-      {
-        name: 'Grade 3-5',
-        class: 'g35',
+const preview: Preview = {
+  parameters: {
+    themes: {
+      default: 'Grade 4-5',
+      list: [
+        {
+          name: 'Grade 2-3',
+          class: 'connect__g23',
+        },
+        {
+          name: 'Grade 4-5',
+          class: 'connect__g45',
+        },
+        {
+          name: 'Grade 6-8',
+          class: 'connect__g68',
+        },
+        {
+          name: 'Grade 9-12',
+          class: 'connect__g912',
+        }
+      ]
+    },
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
       },
-      {
-        name: 'Grade 6-8',
-        class: 'g68',
-      },
-      {
-        name: 'Grade 9-12',
-        class: 'g912',
-      }
-    ]
-  },
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
     },
   },
 };
+
+export default preview;

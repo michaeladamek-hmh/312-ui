@@ -6,40 +6,40 @@ export default {
   tags: ['autodocs'],
   parameters: {
     layout: 'centered',
-  }
+  },
 };
 
-export const Default = args => <DragDrop {...args} />;
-export const Correct = args => <DragDrop {...args} />;
-export const Incorrect = args => <DragDrop {...args} />;
-export const Disabled = args => <DragDrop {...args} />;
-export const Drop = args => <DragDrop {...args} />;
+export const Default = (args) => <DragDrop {...args} />;
+export const Correct = (args) => <DragDrop {...args} />;
+export const Incorrect = (args) => <DragDrop {...args} />;
+export const Disabled = (args) => <DragDrop {...args} />;
+export const Drop = (args) => <DragDrop {...args} />;
 
 Default.args = {
   correct: false,
   incorrect: false,
   disabled: false,
   drop: false,
-  grade: 'g35'
-}
+  grade: 'g35',
+};
 
 Correct.args = {
   ...Default.args,
   correct: true,
-  disabled: true
-}
+  disabled: true,
+};
 
 Incorrect.args = {
   ...Default.args,
-  incorrect: true
-}
+  incorrect: true,
+};
 
 Disabled.args = {
   ...Default.args,
-  disabled: true
-}
+  disabled: true,
+};
 
 Drop.args = {
   ...Default.args,
-  drop: true
-}
+  drop: true,
+};

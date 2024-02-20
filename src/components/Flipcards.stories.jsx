@@ -3,13 +3,13 @@ import { Flipcards } from './Flipcards';
 export default {
   component: Flipcards,
   title: 'Flipcards',
-  tags: ['autodocs']
-}
+  tags: ['autodocs'],
+};
 
-export const Default3 = args => <Flipcards {...args} />;
-export const Default4 = args => <Flipcards {...args} />;
-export const Counter = args => <Flipcards {...args} />;
-export const Sequenced = args => <Flipcards {...args} />;
+export const Default3 = (args) => <Flipcards {...args} />;
+export const Default4 = (args) => <Flipcards {...args} />;
+export const Counter = (args) => <Flipcards {...args} />;
+export const Sequenced = (args) => <Flipcards {...args} />;
 
 Default3.args = {
   front: 'Front text',
@@ -17,20 +17,20 @@ Default3.args = {
   number: '3',
   counter: false,
   sequenced: false,
-  grade: 'g35'
-}
+  grade: 'g35',
+};
 
 Default4.args = {
   ...Default3.args,
-  number: '4'
-}
+  number: '4',
+};
 
 Counter.args = {
   ...Default3.args,
-  counter: true
-}
+  counter: true,
+};
 
 Sequenced.args = {
   ...Default3.args,
-  sequenced: true
-}
+  sequenced: true,
+};
